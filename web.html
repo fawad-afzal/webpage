@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Student Portal</h1>
+        <!-- Task 1: University name and Department name -->
+        <h2>University of Engineering & Technology</h2>
+        <h3>Department of Computer Science</h3>
+        <p>Welcome to the University Student Portal</p>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a> | 
+        <a href="#announcements">Announcements</a> | 
+        <a href="#profile">Profile</a> | 
+        <a href="#courses">Courses</a> |
+        <a href="#registration">Registration</a> | 
+        <a href="#contact">Contact</a>
+    </nav>
+    <hr>
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome</h2>
+            <p> Welcome to the Student Portal. This portal allows students to view their profile, courses, and
+                registration information.
+            </p>
+        </section>
+        <hr>
+
+        <!-- Task 10: Announcements Section -->
+        <section id="announcements">
+            <h2>Announcements</h2>
+            <ul>
+                <li><strong>Midterm Examinations:</strong> Date sheet will be announced next week.</li>
+                <li><strong>Fee Submission:</strong> Last date for semester dues submission is October 5, 2026.</li>
+                <li><strong>Workshop:</strong> Join the Web Development workshop this coming Friday at 3:00 PM.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <!-- Student Profile -->
+        <section id="profile">
+            <h2>Student Information</h2>
+            <!-- Task 2: Student profile picture -->
+            <img src="https://media.istockphoto.com/id/1438185814/photo/college-student-asian-man-and-studying-on-laptop-at-campus-research-and-education-test-exam.jpg?s=612x612&w=0&k=20&c=YmnXshbaBxyRc4Nj43_hLdLD5FLPTbP0p_3-uC7sjik=" alt="Student Profile Picture" width="160" height="140">
+            <p> <strong>Name:</strong> Ali Ahmed </p>
+            <p> <strong>Roll Number:</strong> BSCS-2026-001 </p>
+            <p> <strong>Program:</strong> BS Computer Science </p>
+            <p> <strong>Semester:</strong> 5th Semester </p>
+            <p> <strong>Email:</strong> ali@example.com </p>
+        </section>
+        <hr>
+
+        <!-- Courses -->
+        <section id="courses">
+            <h2>Registered Courses</h2>
+            <table border="1">
+                <caption> Student Course Information </caption>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Course Name</th>
+                    <th>Credit Hours</th>
+                </tr>
+                <tr>
+                    <td>CS-301</td>
+                    <td>Data Structures</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS-302</td>
+                    <td>Database Systems</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS-303</td>
+                    <td>Computer Networks</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS-304</td>
+                    <td>Human Computer Interaction</td>
+                    <td>3</td>
+                </tr>
+                <!-- Task 3: Two additional courses -->
+                <tr>
+                    <td>CS-305</td>
+                    <td>Operating Systems</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS-306</td>
+                    <td>Design and Analysis of Algorithms</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+
+        <!-- Registration Form -->
+        <section id="registration">
+            <h2>Course Registration</h2>
+            <form>
+                <!-- Student Name -->
+                <label for="name"> Student Name: </label> <br>
+                <input type="text" id="name" name="name" placeholder="Enter your name"> <br><br>
+
+                <!-- Roll Number -->
+                <label for="rollno"> Roll Number: </label> <br>
+                <input type="text" id="rollno" name="rollno" placeholder="Enter your roll number"> <br><br>
+
+                <!-- Task 4: Gender Radio Buttons -->
+                <label> Gender: </label> <br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label> <br><br>
+
+                <!-- Task 5: Date of Birth Field -->
+                <label for="dob"> Date of Birth: </label> <br>
+                <input type="date" id="dob" name="dob"> <br><br>
+
+                <!-- Email -->
+                <label for="email"> Email: </label> <br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"> <br><br>
+
+                <!-- Task 7: Phone Number Field -->
+                <label for="phone"> Phone Number: </label> <br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number"> <br><br>
+
+                <!-- Task 6: Department Dropdown -->
+                <label for="department"> Select Department: </label> <br>
+                <select id="department" name="department">
+                    <option value=""> Select Department </option>
+                    <option value="cs">Department of Computer Science</option>
+                    <option value="se">Department of Software Engineering</option>
+                    <option value="it">Department of Information Technology</option>
+                    <option value="ee">Department of Electrical Engineering</option>
+                </select> <br><br>
+
+                <!-- Semester -->
+                <label for="semester"> Select Semester: </label> <br>
+                <select id="semester" name="semester">
+                    <option value=""> Select Semester </option>
+                    <option value="1"> 1st Semester </option>
+                    <option value="2"> 2nd Semester </option>
+                    <option value="3"> 3rd Semester </option>
+                    <option value="4"> 4th Semester </option>
+                    <option value="5"> 5th Semester </option>
+                    <option value="6"> 6th Semester </option>
+                    <option value="7"> 7th Semester </option>
+                    <option value="8"> 8th Semester </option>
+                </select> <br><br>
+
+                <!-- Task 9: Address Field using Textarea -->
+                <label for="address"> Address: </label> <br>
+                <textarea id="address" name="address" rows="3" cols="40" placeholder="Enter your residential address"></textarea> <br><br>
+
+                <!-- Course Selection -->
+                <p> <strong>Select Courses:</strong> </p>
+                <input type="checkbox" id="ds" name="course" value="data-structures">
+                <label for="ds"> Data Structures </label> <br>
+                <input type="checkbox" id="db" name="course" value="database">
+                <label for="db"> Database Systems </label> <br>
+                <input type="checkbox" id="cn" name="course" value="networks">
+                <label for="cn"> Computer Networks </label> <br>
+                <input type="checkbox" id="hci" name="course" value="hci">
+                <label for="hci"> Human Computer Interaction </label> <br><br>
+
+                <!-- Comments -->
+                <label for="comments"> Additional Comments: </label> <br>
+                <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your comments"></textarea> <br><br>
+
+                <!-- Buttons -->
+                <button type="submit"> Register Courses </button>
+                <button type="reset"> Clear Form </button>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <!-- Task 8: University Website Link -->
+        <p> University Website: <a href="https://www.uet.edu.pk" target="_blank">Visit University Portal</a> </p>
+        <p> Email: studentportal@example.com </p>
+        <p> Phone: +92-300-1234567 </p>
+        <p> &copy; 2026 Student Portal. All Rights Reserved. </p>
+    </footer>
+</body>
+
+</html>

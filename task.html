@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Signup Page
+        </title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background-color: #181818;
+            }
+            .nevbaar{
+                padding: 16px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #ffffff;
+            }
+            span{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 800;
+                color: #ffffff;
+            }
+
+            .container{
+                display: flex;
+                height: 100vh;
+            }
+            .left{
+                background-color: #232121;
+                width: 50%;
+                
+            }
+            .left img{
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 15%;
+            border: 3px solid #ffffff;
+            border-radius: 10px;
+            }
+            .left h3{
+                color: #ffffff;
+                font-weight: 700;
+                margin-left: 15%;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin-top: 8px;
+            }
+            .right{
+                background-color:#232121;
+                width: 50%;
+            }
+            .right h1{
+                color: aliceblue;
+                margin-bottom: 15%;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }s
+            .field {
+             display: flex;
+             align-items: center;
+             margin-bottom: 15px;
+}
+
+.field label {
+    width: 80px;
+}
+
+.field input {
+    width: 200px;
+}
+        </style>
+    </head>
+    <body>
+        <section class="nevbaar">
+            <span>SEXY AS <span style="color: rgb(255, 152, 32);">FAWAD</span></span>
+            <span style="font-weight: 300;">SIGNUP</span>
+
+        </section>
+        <Section class="container">
+            <div class="left">
+                <img src="IMG-20250427-WA0044.jpg" alt="">
+                <h3>
+                    All GOONERS AT ONE PLACE, <br><span style="color: rgb(255, 152, 32);">JOIN OUR COMMUNITY</span>
+                </h3>
+            </div>
+            <div class="right">
+                <h1 style="text-align: center; padding-top: 3rem;">
+                 CREATE YOUR ACCOUNT 
+            </h1>
+            
+               <form action="submit" >
+                <div>
+                    <label for="">Email</label>
+                <input type="email" required placeholder="Email"><br>
+                </div>
+                <div>
+                    <label for=""> Password</label>
+                <input type="password" required placeholder="Password">
+                </div>
+                <button type="submit">
+                    submit
+                </button>
+               </form>
+            
+            </div>
+        </Section>
+    </body>
+</html>
